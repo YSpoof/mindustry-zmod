@@ -1,0 +1,16 @@
+{
+  "type": "ThermalGenerator",
+  "name": "Tiny thermal generator",
+  "description": "A compact thermal generator",
+  "size": 1,
+  "powerProduction": 1.8,
+  "requirements": [
+    { "item": "copper", "amount": 10 },
+    { "item": "lead", "amount": 13 },
+    { "item": "metaglass", "amount": 10 },
+    { "item": "graphite", "amount": 9 },
+    { "item": "silicon", "amount": 9 }
+  ],
+  "category": "power",
+  "research": "thermal-generator"
+}

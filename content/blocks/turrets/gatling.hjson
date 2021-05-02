@@ -1,0 +1,67 @@
+type: ItemTurret
+name: Gatling
+description: Quickly fires bullets at ground enemies.
+health: 400
+heatColor: ff0000
+size: 2
+reload: 6
+itemCapacity: 100
+recoil: 1.8
+shootSound: shootBig
+range: 200
+xRand: 1
+inaccuracy : 1
+ammoUseEffect: casing1
+targetAir: false
+shoot: {
+  shots: 1
+}
+targetGround: true
+rotateSpeed: 3.4
+ammoTypes: {
+	copper: {
+	speed: 4
+    damage: 18
+    splashDamage: 6
+    splashDamageRadius: 3
+    width: 10
+    height: 7
+    shootEffect: shootBig
+    smokeEffect: shootBigSmoke
+    hitEffect: hitBulletBig
+    despawnEffect: hitBulletBig
+    lifetime: 48
+    ammoMultiplier: 3
+    knockback: 0.2
+    collidesGround: true
+    }
+
+  graphite: {
+    speed: 8
+    damage: 3
+    splashDamage: 5
+    splashDamageRadius: 40
+    width: 8
+    height: 6
+    pierce: true
+    shootEffect: shootBig
+    lifetime: 50
+    ammoMultiplier: 5
+    knockback: 0
+    homingPower: 0.5
+    homingRange: 1500
+    collidesGround: true
+  }
+	
+}
+
+requirements: [    
+  copper/250
+  lead/60
+  graphite/55
+  silicon/35
+]
+
+ category: turret
+ research: quadra
+

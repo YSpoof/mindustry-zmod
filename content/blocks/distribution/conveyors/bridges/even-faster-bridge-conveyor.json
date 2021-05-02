@@ -1,0 +1,21 @@
+{
+  "type": "ItemBridge",
+  "name": "Even faster bridge conveyor",
+  "description": "A 3x faster bridge conveyor.",
+  "health": 120,
+  "requirements": [
+    {
+      "item": "lead",
+      "amount": 18
+    },
+    {
+      "item": "copper",
+      "amount": 18
+    }
+  ],
+  "range": 12,
+  "transportTime": 6,
+  "hasPower": false,
+  "category": "distribution",
+  "research": "faster-bridge-conveyor"
+}

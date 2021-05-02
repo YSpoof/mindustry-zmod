@@ -1,0 +1,105 @@
+name: Hurricane
+description: A cool and fast shotgun.
+type: ItemTurret
+size: 2
+health: 240
+heatColor: ff0000
+reload: 24
+range: 200
+maxAmmo: 48
+inaccuracy: 5
+shoot: {
+  shots: 8
+}
+targetAir: false
+targetGround: true
+shootCone: 0.08
+recoil: 5
+recoilTime: 0.06
+rotateSpeed: 4
+shootSound: shotgun
+xRand: 1
+ammoPerShot: 4
+ammoTypes:
+{
+ titanium: {
+      type: BasicBulletType
+      lifetime: 30
+      speed: 7
+    	damage: 17
+      splashDamageRadius: 3
+      splashDamage: 1
+      fragBullets: 1
+      fragBullet: {
+          type: BasicBulletType
+      	width: 6
+      	height: 5
+          lifetime: 60
+          speed: 3
+          damage: 8
+  		splashDamageRadius: 10
+  		splashDamage: 10
+  		homingPower: 0.1
+  		homingRange: 120
+          fragBullets: 1
+          fragBullet: {
+              type: BasicBulletType
+        		width: 4
+        		height: 3
+              lifetime: 40
+        		homingPower: 2
+        		homingRange: 140
+              speed: 1
+        		homingPower: 0.1
+        		homingRange: 25
+              damage: 4
+          }
+      }
+}
+ 
+  lead:
+  {
+    type: BasicBulletType
+    speed: 10
+    damage: 20
+    height: 12
+    width: 4
+    hitEffect: blastExplosion
+    shootEffect: producesmoke
+    pierce: false
+    smokeEffect: hitBulletBig
+  }
+  blast-compound:
+  {
+    type: BasicBulletType
+    speed: 7
+    damage: 18
+    lifetime: 30
+    splashDamage: 8
+    hitEffect: blastExplosion
+    shootEffect: producesmoke
+    pierce: false
+    smokeEffect: hitBulletBig
+    splashDamageRadius: 32
+    frontColor: FEB380
+    backColor: EA8878
+    ammoMultiplier: 4
+  }
+}
+requirements:
+[
+  {
+    item: lead
+    amount: 65
+  }
+  {
+    item: copper
+    amount: 50
+  }
+  {
+    item: graphite
+    amount: 40
+  }
+]
+category: turret
+research: quadra

@@ -1,0 +1,49 @@
+type: mech
+name: "Havoc"
+description: "The first ground mech created to protect the core-shard."
+health: 300
+speed: 0.5
+boostMultiplier: 3.3
+mechFrontSway: 0.32
+mechSideSway: 0.6
+hitSize: 9
+drag: 0.3
+accel: 0.5
+range: 160
+itemCapacity: 70
+armor: 3
+rotateSpeed: 9
+canBoost: true
+mineSpeed: 13
+mineTier: 1
+buildSpeed: 1.40
+weapons: [
+{
+    name: large-core-weapon
+    reload: 25
+    x: 4
+    y: 2
+    shootY: 3
+    shootCone: 30
+    inaccuracy: 0
+    shootSound: pew
+    rotate: false
+    recoil: 2
+    top: false
+    ejectEffect: casing1
+    shake: 0.1
+    bullet:{
+        type: MissileBulletType
+        damage: 6
+        speed: 3.5
+        lifetime: 75
+        width: 2
+        height: 4
+        knockback: 0.7
+    }
+} 
+]
+
+research: {
+    parent: core-shard
+}

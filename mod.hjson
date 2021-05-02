@@ -1,0 +1,18 @@
+name: "ZMod"
+displayName: "[accent]Z[green]Mod"
+author: "N0TZ3R0"
+description: 
+'''
+This mod provides a new way to play Mindustry on Serpulo, being a Ground Unit, it also tweaks and add some useful things, like turrets, units, etc...
+
+My Discord: yspoof
+
+Contributors: 
+
+[accent]Penguin0 (Sprites/Code/Balance)
+[accent]kuraisensei (Sprites/Balance)
+
+'''
+version: 1.1.0
+minGameVersion: 142
+repo: YSpoof/mindustry-zmod

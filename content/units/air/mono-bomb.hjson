@@ -1,0 +1,52 @@
+type: payload
+Name: Mono-Bomb
+description: "It explods and can carry 9 1x1 tiles."
+hitSize: 18
+health: 350
+armor: 1
+buildSpeed: 0.5
+mineSpeed: 0.5
+mineTier: 1
+# 64 = 1 tile
+payloadCapacity: 576
+lowAltitude: false
+range: 32
+speed: 2
+rotateSpeed: 60
+baseRotateSpeed: 60
+flying: true
+drag: 0.01
+accel: 0.05
+rotateSpeed: 3
+engineOffset: 6
+engineSize: 2
+weapons: [
+{
+  shoot: {
+  shots: 1
+  shotDelay: 1
+  }
+  shake: 3
+  reload: 60
+  shootSound: explosion
+  shootCone: 360
+  ignoreRotation: true
+  x: 0
+  y: 0
+  mirror: false 
+  bullet: {
+    type: BombBulletType
+    lifetime: 0
+    splashDamage: 200
+    splashDamageRadius: 16
+    killShooter: true
+    hittable: false
+    maxRange: 4
+    collidesAir: true
+  }
+}
+]
+
+research: {
+    parent: core-shard
+}

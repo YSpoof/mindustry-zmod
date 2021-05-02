@@ -1,0 +1,23 @@
+{
+  "name": "Tiny Pneumatic Drill",
+  "description": "So compact.",
+  "type": "Drill",
+  "size": 1,
+  "tier": 3,
+  "drawMineItem": false,
+  "drillTime": 400,
+  "consumes": {
+    "liquid": {
+      "liquid": "water",
+      "amount": 0.6,
+      "booster": true,
+      "optional": true
+    }
+  },
+  "requirements": [
+    "copper/4",
+    "graphite/3"
+  ],
+  "category": "production",
+  "research": "pneumatic-drill"
+}

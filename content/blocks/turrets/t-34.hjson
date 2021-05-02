@@ -1,0 +1,65 @@
+type: ItemTurret
+name: T-34
+description: "Fires missiles at yours enemies."
+health: 2000
+size: 2
+reload: 70
+itemCapacity: 6
+recoil: 3
+shootSound: shootBig
+range: 400
+inaccuracy : 0
+ammoUseEffect: fireSmoke
+shoot: {
+  shots: 3
+}
+shootCone: 5
+targetGround: true
+targetAir: true
+rotateSpeed: 2
+xRand: 6
+ammoTypes: {
+    silicon: {
+        type: MissileBulletType
+        lifetime: 250
+        speed: 1.8
+    	damage: 70
+        splashDamageRadius: 15
+        splashDamage: 65
+        frontColor: ffff00
+        backColor: 00ffff
+        homingPower: 0.05
+        homingRange: 100
+        fragBullets: 2
+        fragBullet: {
+            type: MissileBulletType
+            lifetime: 30
+            speed: 2
+    		homingPower: 0.3
+            homingRange: 25
+            damage: 50
+    		splashDamageRadius: 10
+    		splashDamage: 10
+            fragBullets: 2
+            fragBullet: {
+                type: MissileBulletType
+                lifetime: 10
+                speed: 5
+    			homingPower: 0.1
+    			homingRange: 25
+                damage: 15
+            }
+        }
+      } 
+}
+
+requirements: [    
+  copper/350
+  lead/100
+  graphite/60
+  silicon/45
+]
+
+category: turret
+research: swarmer
+

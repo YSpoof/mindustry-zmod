@@ -1,0 +1,4 @@
+description: "The second form of the Core that is protected by the ground unit: Havoc-MK2"
+unitType: havoc-mk2
+health: 4000
+itemCapacity: 7000

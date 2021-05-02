@@ -1,0 +1,122 @@
+type: mech
+name: "Havoc-MK4"
+description: "An improved version of Havoc-MK3 that can self-heal, has a shield, make coffee and protect the Core-Next, ALL AT THE SAME TIME!"
+health: 450
+speed: 1
+canDrown: false
+boostMultiplier: 4.3
+mechFrontSway: 0.32
+mechSideSway: 0.6
+hitSize: 9
+drag: 0.3
+accel: 0.8
+range: 500
+itemCapacity: 150
+armor: 6
+rotateSpeed: 10.5
+canBoost: true
+mineSpeed: 19
+mineTier: 4
+buildSpeed: 2
+weapons: [
+{
+    name: arc-core-weapon
+       rotate: false
+       reload: 180
+       alternate: false
+       x: 5
+       y: 2
+       shootY: 2.2
+       top: false
+       shootSound: laser
+       continuous: true
+       bullet: {
+         type: LaserBulletType
+         damage: 170
+         width: 15
+         lifetime: 40
+         length: 96
+         hitSize: 96
+         smokeEffect: none
+         pierce: true
+         pierceCap: 999
+         pierceBuilding: true
+         collidesGround: true
+         collidesAir: true
+        }
+}
+{
+    name: unit-gatling
+    reload: 18
+    rotate: false
+    mirror: true
+    top: true
+    x: 0
+    y: 0
+    shootY: 0.6
+    shootX: 3
+    shootCone: 360
+    inaccuracy: 0
+    shootSound: shootBig
+    recoil: 0.8
+    shake: 0.3
+    bullet:{
+        type: BasicBulletType
+        speed: 3
+        damage: 25
+        splashDamage: 3
+        splashDamageRadius: 8
+        width: 10
+        height: 10
+        shootEffect: shootSmall
+        smokeEffect: shootSmallSmoke
+        hitEffect: hitBulletSmall
+        despawnEffect: hitBulletSmall
+        lifetime: 90
+        ammoMultiplier: 1
+        knockback: 0.2
+        collidesAir: true
+        homingRange: 4
+        homingPower: 0.3
+        fragBullets: 5
+        fragRandomSpread: 0
+        fragBullet: {
+            type: BasicBulletType
+            lifetime: 5
+            pierce: true
+            pierceBuilding: true
+            pierceCap: 3
+            speed: 5
+            damage: 10
+            splashDamage: 5
+            splashDamageRadius: 8
+            homingRange: 8
+            homingPower: 0.5
+            width: 5
+            height: 5
+            collidesAir: true
+        }
+    }
+}
+]
+
+abilities: [
+  {
+    type: ForceFieldAbility
+    radius: 10 // raio ( tiles )
+    regen: 0.1 // quanto regenera por tick de max
+    max: 60 // vida escudo
+    cooldown: 180 // intervalo após quebra ( ticks )
+  }
+  {
+  type: RepairFieldAbility
+  amount: 10
+  reload: 270
+  range: 4
+  }
+]
+
+
+research: {
+    parent: core-next
+}

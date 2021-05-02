@@ -1,0 +1,63 @@
+type: ItemTurret
+name: GCannon
+description: "Shoots heavy bullets at your enemies."
+health: 520
+size: 2
+heatColor: ff0000
+reload: 210
+itemCapacity: 15
+recoil: 3
+shootSound: shootBig
+range: 360
+inaccuracy: 0
+ammoUseEffect: casing2
+targetAir: false
+targetGround: true
+shoot: {
+  shots: 1
+}
+rotateSpeed: 2
+ammoTypes: {
+	titanium: {
+			type: BasicBulletType
+			speed: 3
+			damage: 30
+			splashDamage: 5
+			splashDamageRadius: 16
+			width: 35
+			height: 30
+			shootEffect: shootBig
+			smokeEffect: shootBigSmoke
+			hitEffect: hitBulletBig
+			despawnEffect: hitBulletBig
+			lifetime: 120
+			ammoMultiplier: 1
+			knockback: 0.2
+			collidesAir: true
+			fragBullets: 15
+			fragRandomSpread: 90
+			fragBullet: {
+				type: BasicBulletType
+				lifetime: 40
+				pierce: true
+				pierceCap: 2
+				pierceBuilding: true
+				speed: 5
+				damage: 10
+				splashDamage: 3
+				splashDamageRadius: 8
+				width: 9
+				height: 19
+			}
+	}
+}
+
+requirements: [    
+  copper/255
+  lead/65
+  graphite/60
+  silicon/40
+]
+
+ category: turret
+ research: hail

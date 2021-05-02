@@ -1,0 +1,5 @@
+name: "Little Alpha"
+description: "This weak unit protects the Wireless Vault."
+health: 100
+speed: 2.5
+itemCapacity: 15

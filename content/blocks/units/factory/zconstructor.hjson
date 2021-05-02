@@ -1,0 +1,24 @@
+type: UnitFactory
+name: ZConstructor
+description: "Produces units from ZMod." 
+size: 2
+consumes: {
+  power: 1.2
+}
+plans: [
+  {
+    unit: mono-bomb
+    time: 1080
+    requirements: [
+      silicon/25
+      lead/14
+      coal/4
+    ]
+  }
+]
+requirements: [
+  lead/75
+  silicon/40
+]
+research: air-factory
+category: units

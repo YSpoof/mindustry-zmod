@@ -1,0 +1,16 @@
+name: 3x Bridge Conduit
+description: "A 3x bridge conduit."
+type: LiquidBridge
+canOverdrive: true
+health: 120
+size: 1
+range: 12
+buildCostMultiplier: 0.9
+liquidCapacity: 30
+hasPower: false
+requirements: [
+  metaglass/24
+  graphite/12
+]
+category: liquid
+research: 2xbridge-conduit

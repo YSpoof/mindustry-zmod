@@ -1,0 +1,16 @@
+name: 2x Bridge Conduit
+description: "A 2x bridge conduit."
+type: LiquidBridge
+canOverdrive: true
+health: 80
+size: 1
+range: 8
+buildCostMultiplier: 0.5
+liquidCapacity: 20
+hasPower: false
+requirements: [
+  metaglass/16
+  graphite/8
+]
+category: liquid
+research: bridge-conduit

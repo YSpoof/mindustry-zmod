@@ -1,0 +1,21 @@
+{
+  "type": "ItemBridge",
+  "name": "3x Bridge Conveyor",
+  "description": "A 3x bridge conveyor.",
+  "health": 120,
+  "requirements": [
+    {
+      "item": "lead",
+      "amount": 18
+    },
+    {
+      "item": "copper",
+      "amount": 18
+    }
+  ],
+  "range": 12,
+  "transportTime": 6,
+  "hasPower": false,
+  "category": "distribution",
+  "research": "2xbridge-conveyor"
+}

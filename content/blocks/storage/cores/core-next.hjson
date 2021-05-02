@@ -1,0 +1,40 @@
+{
+  name: Core: Next
+  description: That is the Next Core generation.
+  type: CoreBlock
+  health: 12000
+  size: 6
+  itemCapacity: 13000
+  unitCapModifier: 28
+  researchCostMultiplier: 0.03
+  unitType: havoc-mk4
+  requirements:
+  [
+    {
+      item: copper
+      amount: 12000
+    }
+    {
+      item: lead
+      amount: 12000
+    }
+    {
+      item: thorium
+      amount: 6000
+    }
+    {
+      item: silicon
+      amount: 9000
+    }
+    {
+      item: graphite
+      amount: 2000
+    }
+    {
+      item: titanium
+      amount: 3000
+    }
+  ]
+  category: effect
+  research: core-nucleus
+}

@@ -1,0 +1,4 @@
+description: "The final form of the Core that is protected by the ground unit: Havoc-MK3"
+unitType: havoc-mk3
+health: 8000
+itemCapacity: 10000

@@ -1,0 +1,40 @@
+type: PowerTurret
+name: "Railgun"
+description: "Shoots a fast sequence of lasers."
+health: 320
+size: 2
+reloadTime: 16
+shootSound: laser
+cooldown: 0.01
+heatColor: c10000
+range: 210
+recoilAmount: 4
+restitution: 0.03
+chargeTime: 5
+hasPower: true
+chargeEffects: 3
+inaccuracy : 1
+chargeEffect: lancerLaserCharge
+powerUse: 15
+shots: 2
+rotateSpeed: 7
+shootType: {
+           type: LaserBulletType
+           pierce: true
+           damage: 19
+           width: 30
+           lifetime: 18
+           length: 180
+           shootEffect: lancerLaserChargeBegin
+           smokeEffect: none
+           sideAngle: 90
+           sideLength: 90
+           sideWidth: 2
+}
+requirements:[
+  copper/120
+  lead/140
+  silicon/80
+]
+research: lancer
+category: turret

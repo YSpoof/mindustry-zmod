@@ -1,0 +1,4 @@
+description: "The base Core that is protected by the ground unit: Havoc"
+unitType: havoc-mk1
+health: 2100
+itemCapacity: 5000

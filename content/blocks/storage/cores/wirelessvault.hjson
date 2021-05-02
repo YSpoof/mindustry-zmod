@@ -1,0 +1,19 @@
+name: "Wireless Vault"
+description: "Upgrade a simple Vault to link it to the Core Network!"
+size: 3
+health: 500
+itemCapacity: 2500
+buildCostMultiplier: 10
+
+requirements: [
+    titanium/125
+    thorium/60
+    silicon/200
+]
+
+buildVisibility: shown
+category: effect
+research: core-shard
+
+unitType: mono-bomb
+unitCapModifier: 0

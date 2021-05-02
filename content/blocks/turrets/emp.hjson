@@ -1,0 +1,75 @@
+category: turret
+type: PowerTurret
+name: EMP
+description: Launch an EMP pulse that freeze units for about 3 seconds.
+powerUse: 50
+health: 1000
+reloadTime: 1020
+recoilAmount: 0
+rotateSpeed: 0
+shootCone: 360
+range: 136
+heatColor: ff0000
+cooldown: 0.015
+size: 2
+shots: 360
+spread: 1
+inaccuracy: 0
+targetAir: true
+targetGround: true
+ammoUseEffect: casing3
+shootSound: buttonClick
+shootType: {
+    sprite: zmod-emp-wave
+    collidesTiles: false
+    speed: 3.5
+    height: 48
+    width: 8
+    drawSize: 0
+    hitSize: 16
+    pierce: true
+    lifetime: 43
+    knockback: 0
+    splashDamage: 10
+    splashDamageRadius: 8
+    statusDuration: 180
+    status: 
+      {
+        name: emp
+        localizedName: EMP Strike
+        speedMultiplier: 0.001
+        reloadMultiplier: 0.001
+      }
+    hitEffect: hitFuse
+    despawnEffect: none
+    shootEffect: none
+    smokeEffect: none
+    incendChance: 0
+    frontColor: 00f8ff
+    backColor: afeced
+}
+requirements:
+[
+  {
+    item: copper
+    amount: 500
+  }
+  {
+    item: lead
+    amount: 150
+  }
+  {
+    item: thorium
+    amount: 175
+  }
+  {
+    item: graphite
+    amount: 300
+  }
+  {
+    item: titanium
+    amount: 50
+  }
+]
+
+research: enhanced-arc

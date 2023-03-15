@@ -1,7 +1,8 @@
-require("unnerf_build_damage");
-require("wirelessvault");
+print("Loading Time Control...");
 require("time_control");
+print("Loading Un-nerf Build Damage...");
+require("unnerf_build_damage");
+print("Loading Wireless Vault...")
+require("wirelessvault");
 
-Vars.enableConsole = true;
-
-print("ZMod Loaded :) Yay")
+print("ZMod Loaded :) Yay");

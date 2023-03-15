@@ -1,4 +1,4 @@
-const coredvalut = extendContent(CoreBlock, "wirelessvault", {
+const coredvalut = extend(CoreBlock, "wirelessvault", {
     canReplace(other){
         return this.super$canReplace(other) || ((other instanceof StorageBlock && coredvalut.size >= other.size) || (other instanceof CoreBlock && coredvalut.size >= other.size));
     },

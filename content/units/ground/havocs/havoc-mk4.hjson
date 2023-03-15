@@ -83,7 +83,7 @@ weapons: [
         fragCone: 0
         fragBullet: {
             type: BasicBulletType
-            lifetime: 40
+            lifetime: 5
             pierce: true
             pierceBuilding: true
             pierceCap: 3

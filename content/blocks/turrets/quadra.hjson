@@ -4,7 +4,7 @@ type: ItemTurret
 size: 1
 health: 280
 heatColor: ff0000
-reloadTime: 8.5
+reload: 8.5
 xRand: 0
 maxAmmo: 50
 range: 200

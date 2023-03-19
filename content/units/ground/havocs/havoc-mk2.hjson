@@ -3,7 +3,6 @@ name: "Havoc-MK2"
 description: "An improved version of Havoc, to protect the core-foundation."
 health: 350
 speed: 0.6
-commandLimit: 6
 boostMultiplier: 3.8
 mechFrontSway: 0.32
 mechSideSway: 0.6

@@ -4,16 +4,18 @@ description: "Shoots heavy bullets at your enemies."
 health: 520
 size: 2
 heatColor: ff0000
-reloadTime: 210
+reload: 210
 itemCapacity: 15
-recoilAmount: 3
+recoil: 3
 shootSound: shootBig
 range: 360
 inaccuracy: 0
 ammoUseEffect: casing2
 targetAir: false
 targetGround: true
-shots: 1
+shoot: {
+  shots: 1
+}
 rotateSpeed: 2
 ammoTypes: {
 	titanium: {
@@ -33,7 +35,7 @@ ammoTypes: {
 			knockback: 0.2
 			collidesAir: true
 			fragBullets: 15
-			fragCone: 90
+			fragRandomSpread: 90
 			fragBullet: {
 				type: BasicBulletType
 				lifetime: 40

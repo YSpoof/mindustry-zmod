@@ -3,10 +3,12 @@
   description: An Arc against air enemies only.
   size: 1
   range: 130
-  reloadTime: 10
+  reload: 10
   shootSound: spark
   shootCone: 30
+  shoot: {
   shots: 1
+  }
   shootType:
   {
     type: LightningBulletType
@@ -14,14 +16,16 @@
     damage: 30
   }
   rotateSpeed: 100
-  powerUse: 2.8
+  consumes: {
+  power: 2.8
+  }
   targetAir: true
   targetGround: false
   heatColor: ff0000
   shootEffect: lightningShoot
-  recoilAmount: 1
-  cooldown: 0.02
-  restitution: 0.02
+  recoil: 1
+  cooldownTime: 0.02
+  recoilTime: 0.02
   requirements:
   [
     {

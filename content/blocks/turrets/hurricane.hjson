@@ -4,17 +4,18 @@ type: ItemTurret
 size: 2
 health: 240
 heatColor: ff0000
-reloadTime: 24
+reload: 24
 range: 200
 maxAmmo: 48
 inaccuracy: 5
-shots: 8
+shoot: {
+  shots: 8
+}
 targetAir: false
 targetGround: true
 shootCone: 0.08
-spread: 1
-recoilAmount: 5
-restitution: 0.06
+recoil: 5
+recoilTime: 0.06
 rotateSpeed: 4
 shootSound: shotgun
 xRand: 1

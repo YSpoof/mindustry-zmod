@@ -1,19 +1,22 @@
 category: turret
 type: PowerTurret
-name: EMP
+name: EMP (BROKEN FOR NOW)
 description: Launch an EMP pulse that freeze units for about 3 seconds.
-powerUse: 50
+consumes: {
+power: 50
+}
 health: 1000
-reloadTime: 1020
-recoilAmount: 0
+reload: 1020
+recoil: 0
 rotateSpeed: 0
 shootCone: 360
-range: 136
+range: 185
 heatColor: ff0000
-cooldown: 0.015
+cooldownTime: 0.015
 size: 2
-shots: 360
-spread: 1
+shoot: {
+  shots: 360
+}
 inaccuracy: 0
 targetAir: true
 targetGround: true
@@ -28,7 +31,7 @@ shootType: {
     drawSize: 0
     hitSize: 16
     pierce: true
-    lifetime: 43
+    lifetime: 51
     knockback: 0
     splashDamage: 10
     splashDamageRadius: 8
@@ -37,14 +40,14 @@ shootType: {
       {
         name: emp
         localizedName: EMP Strike
-        speedMultiplier: 0.001
-        reloadMultiplier: 0.001
+        speedMultiplier: 0.01
+        reloadMultiplier: 0.01
       }
     hitEffect: hitFuse
     despawnEffect: none
     shootEffect: none
     smokeEffect: none
-    incendChance: 0
+    incendChance: 0.5
     frontColor: 00f8ff
     backColor: afeced
 }

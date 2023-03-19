@@ -3,7 +3,6 @@ name: "Havoc-MK4"
 description: "An improved version of Havoc-MK3 that can self-heal, has a shield, make coffee and protect the Core-Next, ALL AT THE SAME TIME!"
 health: 450
 speed: 1
-commandLimit: 10
 canDrown: false
 boostMultiplier: 4.3
 mechFrontSway: 0.32
@@ -80,7 +79,7 @@ weapons: [
         homingRange: 4
         homingPower: 0.3
         fragBullets: 5
-        fragCone: 0
+        fragRandomSpread: 0
         fragBullet: {
             type: BasicBulletType
             lifetime: 5

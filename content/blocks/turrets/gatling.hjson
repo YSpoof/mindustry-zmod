@@ -4,20 +4,21 @@ description: Quickly fires bullets at ground enemies.
 health: 400
 heatColor: ff0000
 size: 2
-reloadTime: 6
+reload: 6
 itemCapacity: 100
-recoilAmount: 1.8
+recoil: 1.8
 shootSound: shootBig
 range: 200
 xRand: 1
 inaccuracy : 1
 ammoUseEffect: casing1
 targetAir: false
-shots: 1
+shoot: {
+  shots: 1
+}
 targetGround: true
 rotateSpeed: 3.4
 ammoTypes: {
-
 	copper: {
 	speed: 4
     damage: 18

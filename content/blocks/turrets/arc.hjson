@@ -1,1 +1,3 @@
-powerUse: 2.75
+consumes: {
+power: 2.75
+}

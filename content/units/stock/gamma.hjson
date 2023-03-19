@@ -7,10 +7,11 @@
       "y": 2,
       "reload": 15,
       "ejectEffect": "casing1",
-      "shots": 2,
+       "shoot": {
+        "shots": 2,
+        "shotDelay": 3,
+        },
       "inaccuracy": 3,
-      "spacing": 2,
-      "shotDelay": 3,
       "bullet": {
         "type": "BasicBulletType",
         "speed": 3.5,
@@ -31,9 +32,8 @@
       "y": -3.5,
       "reload": 7.5,
       "ejectEffect": "casing1",
-      "shots": 1,
+      "shoot": {"shots": 1},
       "inaccuracy": 5,
-	  "spacing": 2,
       "recoil": 1,
 	  "rotate": true
       "bullet": {

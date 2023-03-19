@@ -20,11 +20,12 @@ accel: 0.05
 rotateSpeed: 3
 engineOffset: 6
 engineSize: 2
-rotateShooting: false
 weapons: [
 {
+  shoot: {
   shots: 1
   shotDelay: 1
+  }
   shake: 3
   reload: 60
   shootSound: explosion

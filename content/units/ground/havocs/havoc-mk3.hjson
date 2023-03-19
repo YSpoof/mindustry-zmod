@@ -3,7 +3,6 @@ name: "Havoc-MK3"
 description: "An improved version of Havoc-MK2 that can self-heal and protect the core-nucleus."
 health: 400
 speed: 0.8
-commandLimit: 8
 boostMultiplier: 4
 mechFrontSway: 0.32
 mechSideSway: 0.6
@@ -72,11 +71,9 @@ name: transparent
    shootSound: laserblast
    chargeSound: lasercharge2
    continuous: true
-   firstShotDelay: 45
    bullet: {
        type: ContinuousLaserBulletType
        colors: [0073ff, 1780ff, 338fff, 4296fc, ffffff]
-       strokes: [1.4, 1.24, 1, 0.74, 0.1]
        pierce: true
        damage: 13
        incendChance: 0

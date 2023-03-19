@@ -3,7 +3,6 @@ name: "Havoc"
 description: "The first ground mech created to protect the core-shard."
 health: 300
 speed: 0.5
-commandLimit: 4
 boostMultiplier: 3.3
 mechFrontSway: 0.32
 mechSideSway: 0.6

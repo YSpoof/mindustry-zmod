@@ -48,5 +48,5 @@ weapons: [
 ]
 
 research: {
-    parent: core-shard
+    parent: zconstructor
 }

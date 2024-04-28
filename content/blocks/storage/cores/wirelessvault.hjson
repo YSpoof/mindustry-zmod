@@ -15,5 +15,5 @@ buildVisibility: shown
 category: effect
 research: core-shard
 
-unitType: mono-bomb
+unitType: alpha
 unitCapModifier: 0

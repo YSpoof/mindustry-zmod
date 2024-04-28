@@ -1,6 +1,6 @@
 {
   name: Tiny Overdriver
-  description: A entry-level Overdriver.
+  description: An entry-level Overdriver.
   type: OverdriveProjector
   health: 80
   size: 1

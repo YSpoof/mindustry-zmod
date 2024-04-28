@@ -23,7 +23,7 @@ ammoTypes: {
         type: MissileBulletType
         lifetime: 250
         speed: 1.8
-    	damage: 70
+    	damage: 35
         splashDamageRadius: 15
         splashDamage: 65
         frontColor: ffff00
